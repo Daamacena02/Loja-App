@@ -4,6 +4,17 @@
     <h1 class="text-3xl font-bold underline">
       Principal!
     </h1>
+    <div (click)="onClick()" class="card flex justify-center bg-black text-xl">
+      <p-button label="Check"></p-button>
+  </div>
 
+  <p-drawer class="bg-white" [(visible)]="visible" header="Drawer">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat.
+    </p>
+</p-drawer>
+<p-button (click)="visible = true" icon="pi pi-arrow-right" />
   </div>
 </div>
